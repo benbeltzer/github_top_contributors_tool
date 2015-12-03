@@ -61,7 +61,6 @@ def get_top_ten_contributors():
 
     contributors_json = get_contributors(repo, owner)
     contributors = get_contributor_details(contributors_json)
-    print contributors
 
     for i in xrange(0, min(10, len(contributors))):
         print str(i+1) + ") User: %s\n   Commits: %d" % contributors[i]
